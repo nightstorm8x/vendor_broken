@@ -80,22 +80,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/broken/config/permissions/com.layers.theme.xml:system/etc/permissions/com.layers.theme.xml \
     vendor/broken/prebuilt/common/app/Layers.apk:system/app/Layers/Layers.apk
-
-# Workaround for NovaLauncher zipalign fails
-PRODUCT_COPY_FILES += \
-    vendor/broken/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher/NovaLauncher.apk
-
-# Amaze File Manager
-PRODUCT_COPY_FILES += \
-    vendor/broken/prebuilt/common/app/Amaze.apk:system/app/Amaze/Amaze.apk
-
-# KernelAdiutor
-PRODUCT_COPY_FILES += \
-    vendor/broken/prebuilt/common/app/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
-    
-# Viper
-PRODUCT_COPY_FILES += \
-    vendor/broken/prebuilt/common/app/Viper4Android.apk:system/app/Viper4Android/Viper4Android.apk
     
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
@@ -213,9 +197,7 @@ PRODUCT_PACKAGES += \
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    Basic \
-    LiveWallpapersPicker \
-    PhaseBeam
+    LiveWallpapersPicker
 
 # DSPManager
 PRODUCT_PACKAGES += \
@@ -230,8 +212,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     WallpaperPicker \
     BrokenOTA \
-    BrokenWalls \
-    Browser
+    BrokenWalls
 
 # AudioFX
 #PRODUCT_PACKAGES += \
